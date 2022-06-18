@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="ola">Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <fieldset>
+                <div>
+                    <label for="ano">Ano de Nascimento:</label>
+                    <input type="number" name="ano" id="ano" autofocus>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label>Gênero:</label>
+                    <div>
+                        <input type="radio" name="gen" id="gen_m" value="M" checked>
+                        <label for="gen_m">Masculino</label>
+                        <input type="radio" name="gen" id="gen_f" value="F">
+                        <label for="gen_f">Feminino</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <button type="submit" onclick="verificar()">Verificar</button>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div id="resultado">
+                </div>
+            </fieldset>
+            <noscript>
+                <p style="text-align: center;"><strong>Ative o JavaScript para interagir com o site!</strong></p>
+            </noscript>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVídeo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
